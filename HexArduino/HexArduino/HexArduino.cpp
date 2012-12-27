@@ -1,15 +1,28 @@
 // Do not remove the include below
 #include "HexArduino.h"
+#include "Leg.h"
 
+Leg *frontLeft;
+Leg *frontRight;
+Leg *centerLeft;
+Leg *centerRight;
+Leg *backLeft;
+Leg *backRight;
 
-//The setup function is called once at startup of the sketch
 void setup()
 {
-// Add your initialization code here
+	//TODO: add proper servo pin numbers.
+	frontLeft = new Leg(0, 0, 0);
+	frontRight = new Leg(0, 0, 0);
+	centerLeft = new Leg(0, 0, 0);
+	centerRight = new Leg(0, 0, 0);
+	backLeft = new Leg(0, 0, 0);
+	backRight = new Leg(0, 0, 0);
+
 }
 
-// The loop function is called in an endless loop
 void loop()
 {
-//Add your repeated code here
+
+
 }
